@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>UFFO</title>
+	
+	<link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/script.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			$( ".load" ).click(function( event ) {
+				var largura = event.pageX - parseInt(parseInt($("#drone-mov").attr("width"))/2);
+				var altura = event.pageY - parseInt(parseInt($("#drone-mov").attr("height"))/2);
+
+				$("#drone-mov").animate({"top": altura }, "slow");
+				$("#drone-mov").animate({"left": largura }, "slow");
+			});
+
+
+		});
+	</script>
+</head>
+
+<body>
+	<nav class="mobile-nav" style="background-color: black; width: 100%; color: white;">
+		<div class="container">
+			<img src="logo.png">
+
+			<ul style="list-style-type: none;">
+				<li class="desktop-nav" ><a href="#intro">INICIO</a></li>								<li class="mobile-li" ><a href="#intro"><i class="fa fa-home"></i></a></li> 
+				<li class="desktop-nav" ><a href="#projeto">PROJETO</a></li> 							<li class="mobile-li" ><a href="#projeto"><i class="fa fa-code"></i></a></li>
+				<li class="desktop-nav" ><a href="#equipe">EQUIPE</a></li>								<li class="mobile-li" ><a href="#equipe"><i class="fa fa-group"></i></a></li>
+				<!--<li class="desktop-nav" id="link-apoiadores" ><a href="">APOIADORES</a></li>-->		<li class="mobile-li" ><a href="#contato"><i class="fa fa-comments"></i></a></li>
+				<li class="desktop-nav" ><a href="#contato">CONTATO</a></li>		
+			</ul>
+		</div>
+	</nav>
+
+	<header>
+		<img src="img_1.png">
+	</header>
+
+	<main>
+		<section class="intro" id="intro">
+			<div class="container">
+				<div id="img-intro">
+					<img src="quem_somos.png" >
+				</div>
+
+				<div id="texto-intro">
+					<h2>Quem somos?</h2>
+					<p>
+						A Equipe UFFO é um grupo composto por estudantes de diversas áreas da ciência 
+						e tecnologia com interesse mútuo pelo estudo e desenvolvimento de Drones Inteligentes. 
+						O grupo atualmente foca em projetos de aplicações possíveis para os drones. 
+						Além disso, faz parte dos objetivos da equipe participar em competições universitárias 
+						para representar a UFF e possivelmente o Brasil mundo a fora.
+					</p>
+					
+				</div>
+			</div>
+		</section>
+
+		<section class="projeto" id="projeto" >
+			<div class="container">
+				<div id="img-projeto">
+					<img src="drone_icon.png" >
+				</div>
+
+				<div id="texto-projeto">
+					<h2>Projeto</h2>
+					<p>
+						Atualmente a equipe trabalha em duas linhas de projetos diferentes. 
+						A primeira, é o desenvolvimento de um drone autônomo de vigilância para os campi 
+						da UFF, visando a segurança dos alunos e professores. A segunda linha é referente 
+						a participação na <a href ="https://blog.cobruf.com.br/">COBRUFDrones</a> que é uma 
+						competição focada no desenvolvimento de um drone conceitual para a exploração de Marte.  
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="equipe" id="equipe" >
+			<div class="container">
+				<div id="img-equipe">
+					<img src="equipe.jpg" >
+				</div>
+
+				<div id="texto-equipe">
+					<h2>Equipe</h2>
+					<p>
+						A equipe se divide em 5 áreas diferentes: Software, Eletrônica, Mecânica, 
+						Gestão e Marketing. Além de se reunir a um professor tutor, que ajuda com 
+						outras questões administrativas.	
+					</p>
+				</div>
+				<div id="divisao_equipe">
+					<img src="divisaoequipe.png">
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Futuro tópico para os apoiadores -->
+		<!--
+		<section class="projeto" >
+			<div class="container">
+				<div id="img-projeto">
+					<img src="logo.png" >
+				</div>
+
+				<div id="texto-projeto">
+					<h2>Apoiadores</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacinia nunc. Duis blandit id mi quis fermentum. Mauris sed eleifend est. Sed a urna orci. Etiam interdum, mi ac aliquam vehicula, dui justo vehicula nunc, sit amet vulputate sapien
+					</p>
+				</div>
+			</div>
+		</section>
+		-->
+
+
+		<section class="frases" >
+			<div class="container">
+				<div id="frase-1">
+					<p>
+						"Quanto mais nos elevamos, menores parecemos aos olhos daqueles que não sabem voar."<br>
+						- NIETZSCHE, F.
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="contato" id="contato">
+
+			<!-- CONTATOS -->
+			<div id="contatos" class="container">
+
+				<h2 style="width:100%; margin-bottom: 20px; text-align: center;">CONTATOS</h2>				
+		  
+				<div id="formulario-contato" style="">
+				  <form method="POST" action="https://formspree.io/cleytoncunha12@gmail.com">
+					<fieldset>
+					  <input type="hidden" name="_subject" value="Novo contato!"/>
+					  
+					  <input type="hidden" name="_language" value="pt" />
+		  
+					  <input type="text" name="nome" placeholder="Seu nome">
+					  <input type="text" name="email" placeholder="Seu e-mail">
+					  <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+				  
+					  <button type="submit">Enviar</button>
+					</fieldset>
+				  </form>
+				</div>
+				
+				<div id="mapa" style="">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2396137416117!2d-43.13512304992828!3d-22.904531243474235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817dce2f93eb%3A0x9e97773b91b93bba!2sUFF+-+Campus+Praia+Vermelha!5e0!3m2!1spt-BR!2sbr!4v1554918249503!5m2!1spt-BR!2sbr" width="350" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+		  
+			  </div>
+		</section>
+
+
+	</main>
+
+	<footer>
+		<div>©2019 EQUIPE UFFO</div>
+		<div style="padding-top: 5px; margin-left:auto; margin-right:auto; text-align:center; color:white;">
+			<ul class="social-midias">
+			  <li><a href="https://www.facebook.com/equipeuffo/"><i class="fa fa-facebook"></i></a></li>
+			  <li><a href="https://twitter.com/EquipeUffo"><i class="fa fa-twitter"></i></a></li>
+			  <li><a href="https://www.instagram.com/equipeuffo/?hl=pt-br"><i class="fa fa-instagram"></i></a></li>
+			  <li><a href="https://br.linkedin.com/company/equipe-uffo?trk=public_profile_topcard_current_company"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+		  </div>
+	</footer>
+</body>	
+
+</html>

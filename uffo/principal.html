@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UFFO</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/script.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			$( ".load" ).click(function( event ) {
+				var largura = event.pageX - parseInt(parseInt($("#drone-mov").attr("width"))/2);
+				var altura = event.pageY - parseInt(parseInt($("#drone-mov").attr("height"))/2);
+
+				$("#drone-mov").animate({"top": altura }, "slow");
+				$("#drone-mov").animate({"left": largura }, "slow");
+			});
+
+
+		});
+	</script>
+
+</head>
+<body>
+
+	<div class="load" style="display: none;  position: absolute; top: 0px; left: 0px;  width: 100%; height: 100%; background-color: blue;">
+		<img id="drone-mov" src="drone_icon.png"  style=" position: absolute; top: 40%; left: 45%; " width="256px" height="141px">
+	</div>
+
+	<nav class="mobile-nav" style="background-color: black; width: 100%; color: white;">
+		<div class="container">
+			<img src="logo.png">
+
+			<ul style="list-style-type: none;">
+				<li><a href="">INICIO</a></li>
+				<li><a href="">PROJETO</a></li>
+				<li><a href="">EQUIPE</a></li>
+				<li><a href="">APOIADORES</a></li>
+				<li><a href="">CONTATO</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<header>
+		<div></div>
+	</header>
+
+	<main>
+		<section class="intro" >
+			<div class="container">
+				<div id="img-intro">
+					<img src="logo.png" >
+				</div>
+
+				<div id="texto-intro">
+					<h2>Quem somos?</h2>
+					<p>
+						A Equipe UFFO é um grupo composto por estudantes de diversas áreas da ciência e tecnologia com interesse mútuo pelo estudo e desenvolvimento de Drones Inteligentes. O grupo atualmente foca em projetos de aplicações possíveis para os drones. Além disso, faz parte dos objetivos da equipe participar em competições universitárias para representar a UFF e possivelmente o Brasil mundo a fora.   
+					</p>
+					<a href="" style="display: inline-block; float: right; position: relative; bottom: 0px; left: 0px;">Saiba Mais</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="projeto" >
+			<div class="container">
+				<div id="img-projeto">
+					<img src="logo.png" >
+				</div>
+
+				<div id="texto-projeto">
+					<h2>Projeto</h2>
+					<p>
+						Atualmente a equipe trabalha em duas linhas de projetos diferentes. A primeira, é o desenvolvimento de um drone autônomo de vigilância para os campi da UFF, visando a segurança dos alunos e professores. A segunda linha é referente a participação na <a href ="linkdacompetição">COBRUFDrones</a> que é uma competição focada no desenvolvimento de um drone conceitual para a exploração de Marte.  
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="equipe" >
+			<div class="container">
+				<div id="img-equipe">
+					<img src="logo.png" >
+				</div>
+
+				<div id="texto-equipe">
+					<h2>Equipe</h2>
+					<p>
+						A equipe se divide em 5 áreas diferentes: Software, Eletrônica, Mecânica, Gestão e Marketing. Além de se reunir a um professor tutor, que ajuda com outras questões administrativas.
+
+						<!-- coloca a imagem da estruturação da equipe aqui!! -->
+						<img id="estrutura_da_equipe" src="divisao_equipe.jpeg" width="500px" height="500px">
+						<!-- -->
+
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="frases" >
+			<div class="container">
+				<div id="img-frases">
+					<img src="logo.png" width="500px" >
+				</div>
+				<!-- Ao invés de botar aqule azul, coloca no fundo a imagem do espaço com estrelas e a frase em branco -->
+				<div id="frase-1">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacinia nunc. Duis blandit id mi quis fermentum. Mauris sed eleifend est. Sed a urna orci. Etiam interdum, mi ac aliquam vehicula, dui justo vehicula nunc, sit amet vulputate sapien
+					</p>
+				</div>
+
+				<div id="frase-2">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lacinia nunc. Duis blandit id mi quis fermentum. Mauris sed eleifend est. Sed a urna orci. Etiam interdum, mi ac aliquam vehicula, dui justo vehicula nunc, sit amet vulputate sapien
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="contato">
+
+			<div class="container">
+				
+				<h2 style="margin-bottom: 25px;">Entre em contato</h2>
+
+				<form style="width: 80%; height: auto; margin-left: auto; margin-right: auto;">
+					<label>Nome</label><br>
+					<input type="text" name="" placeholder="nome"><br>
+					<label>Email</label><br>
+					<input type="text" name="" placeholder="email"><br><br>
+					<label>Mensagem</label><br>
+					<textarea style="width: 80%;" ></textarea>
+				</form>
+
+			</div>
+		</section>
+
+
+	</main>
+
+	<footer>
+		<div>Copyright Â© Equipe UFFO 2019</div>
+	</footer>
+</body>	
+
+</html>

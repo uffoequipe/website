@@ -1,0 +1,154 @@
+/*##########Atributos Globais##########*/
+*{ margin: 0px; padding: 0px;}
+
+
+/*##########Atributos para mobiles - minimum width##########*/
+@media only screen and (max-width: 480px) {
+	.container{ width: 90%px; margin-left: auto; margin-right: auto; }	
+	.desktop-nav{display: none;}
+	
+	.mobile-li {height: 40px; width: 40px;}
+	.mobile-li a{color: antiquewhite; width: 40px; height: 40px; }
+	.mobile-li a i{ width: 40px; height: 40px; text-align: center; }
+
+	.mobile-nav ul{ float: right; min-width: 70%; max-width: 70%; }
+	.mobile-nav li{ text-align: center; vertical-align: center; font-size: 20px; margin-top: 10px; float: left; width: 25%;}
+
+	header { padding-top: 40px;}
+	header img{ width: 100%; border-bottom: 1px solid black; }
+
+	#formulario-contato{ width: 100%;  padding-top:30px; }
+	#mapa{ text-align: center; width: 100%; margin-left: auto; margin-right: auto; }
+
+	#img-intro{ display: none; width: 30%; margin-left: auto; margin-right: auto; }
+	#img-intro img{ width: 100%; }
+	#texto-intro{ width: 95%; margin-left: auto; margin-right: auto; }
+	#texto-intro h2{ margin-bottom: 15px; }
+	#texto-intro p{ text-align: justify; }
+
+	#img-projeto{ display:none; width: 30%; float: right; }
+	#img-projeto img{ width: 100%; }
+	#texto-projeto{ width: 95%;  margin-left: auto; margin-right: auto; }
+	#texto-projeto h2{ margin-bottom: 15px; }
+	#texto-projeto p{ text-align: justify; }
+
+	#img-equipe{ display: none; width: 30%; float: left; }
+	#img-equipe img{ width: 100%; }
+	#texto-equipe{ width: 95%;  margin-left: auto; margin-right: auto; }
+	#texto-equipe h2{ margin-bottom: 15px; }
+	#texto-equipe p{ text-align: justify; }
+
+	#divisao_equipe{ margin-top: 20px;}
+
+	.frases{ padding: 50px 0px; margin-top: 50px; background-image: url("../marte-background.jpg"); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+	#frase-1{ width: 100%; padding-top: 50px; text-align: center;}
+	#frase-1 p{ width: 60%; margin-left: auto; margin-right: auto; color: white; text-align: justify; font-size: 1.2em; }
+}
+
+/*##########Atributos para mobiles - medium width##########*/
+@media only screen and (min-width: 480px) and  (max-width: 960px){
+	.container{ width: 95%; margin-left: auto; margin-right: auto; }
+	.mobile-li{ display: none; }
+	
+	.mobile-nav ul{ float: right; min-width: 70%; max-width: 70%; }
+	.mobile-nav li{ text-align: right; vertical-align: center; font-size: 80%; margin-top: 10px; float: left; margin-left: 0px; width: 24%;}
+	#link-apoiadores{ display: none;}
+
+	header { padding-top: 40px;}
+	header img{ width: 100%; border-bottom: 1px solid black; }
+
+	#formulario-contato{ width: 100%; padding-top:30px; }
+	#mapa{ text-align: center; width: 100%; margin-left: auto; margin-right: auto; }
+
+	#img-intro{ width: 30%; float: left; }
+	#img-intro img{ width: 100%; }
+	#texto-intro{ width: 65%; float: right; }
+	#texto-intro h2{ margin-bottom: 15px; }
+	#texto-intro p{ text-align: justify; }
+
+	#img-projeto{ width: 30%; float: right; }
+	#img-projeto img{ width: 100%; }
+	#texto-projeto{ width: 65%; float: left; }
+	#texto-projeto h2{ margin-bottom: 15px; }
+	#texto-projeto p{ text-align: justify; }
+
+	#img-equipe{ width: 30%; float: left; }
+	#img-equipe img{ width: 100%; }
+	#texto-equipe{ width: 65%; float: right; }
+	#texto-equipe h2{ margin-bottom: 15px; }
+	#texto-equipe p{ text-align: justify; }
+
+	.frases{ padding: 50px 0px; margin-top: 50px; background-image: url("../marte-background.jpg"); background-size: 100%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+	#frase-1{ width: 100%; padding-top: 50px; text-align: center;}
+	#frase-1 p{ width: 60%; margin-left: auto; margin-right: auto; color: white; text-align: justify; font-size: 1.2em; }
+}
+
+/*##########Atributos para desktops - larger width##########*/
+@media only screen and (min-width: 960px) {
+	.container{ width: 900px; margin-left: auto; margin-right: auto; }	
+	.mobile-li{ display: none; }
+
+	.mobile-nav li{ text-align: right; vertical-align: center; font-size: 80%; margin-top: 10px; float: left; margin-left: 18px; }
+	.mobile-nav ul{ float: right; max-width: 70%; }
+
+	header { padding-top: 40px;}
+	header img{ width: 100%; border-bottom: 1px solid black; }
+
+
+	#formulario-contato{ padding-top:30px; width:40%; float:left; }
+	#mapa{ text-align: right; float:right; width: 52%; padding-top:45px; }
+
+	#img-intro{ width: 30%; float: left; }
+	#img-intro img{ width: 100%; }
+	#texto-intro{ width: 65%; float: right; }
+	#texto-intro h2{ margin-bottom: 15px; }
+	#texto-intro p{ text-align: justify; }
+
+	#img-projeto{ width: 30%; float: right; }
+	#img-projeto img{ width: 100%; }
+	#texto-projeto{ width: 65%; float: left; }
+	#texto-projeto h2{ margin-bottom: 15px; }
+	#texto-projeto p{ text-align: justify; }
+
+	#img-equipe{ width: 30%; float: left; }
+	#img-equipe img{ width: 100%; }
+	#texto-equipe{ width: 65%; float: right; }
+	#texto-equipe h2{ margin-bottom: 15px; }
+	#texto-equipe p{ text-align: justify; }
+
+	.frases{ padding: 50px 0px; margin-top: 50px; background-image: url("../marte-background.jpg"); background-size: 100%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+	#frase-1{ width: 100%; padding-top: 50px; text-align: center;}
+	#frase-1 p{ width: 60%; margin-left: auto; margin-right: auto; color: white; text-align: justify; font-size: 1.2em; }
+}
+
+/*##########Atributos Genericos##########*/
+
+.mobile-nav{ position: fixed; width: 100%; height: 50px; background-color: black; display: inline-block; z-index: 1; }
+.mobile-nav img{ position: absolute; width: 100px; float: left; }
+.mobile-nav li a{font-size: 1.5em; outline: none; text-decoration: none; color: white; transition: 0.4s;}
+.mobile-nav li a:hover{ color: #3399cc; transition: 0.4s; }
+
+#intro{ margin-top: -50px; }
+section{ width: 100%; display: inline-block; padding-top: 100px; }
+
+#divisao_equipe{ width: 100%; text-align: center;}
+#divisao_equipe img{ width: 100%; margin-left: auto; margin-right: auto; }
+
+form { max-width: 600px; margin: 0 auto; font-family: 'Open Sans', sans-serif; font-weight: weight; font-style: normal; padding: 10px; }
+form fieldset { border: none; font-weight: normal; }
+form input[type="text"],
+form input[type="email"],
+form textarea { box-sizing: border-box; outline: none; display: block; color: #333; width: 100%; padding: 7px; border: none; border-bottom: 1px solid #ddd; margin-bottom: 10px; font-family: inherit; font-size: 18px; height: 45px; }
+form textarea { height: 120px; }
+form button[type="submit"] { display: block; padding: 19px 39px 18px 39px; color: #fff; background: #3399cc; font-size: 18px; width: 100%; border: 1px solid #27759c; border-width: 1px 1px 3px; margin-top: 50px; margin-bottom: 10px; cursor: pointer; transition: all 0.3s; outline: none; }
+form button[type="submit"]:hover { background: #27759c; }
+
+footer{ margin-top: 45px; width: 100%; background-color: black; height: 150px; }
+footer div{ width: 100%; text-align: center; color: white; padding-top: 50px; }
+
+.social-midias{ width: 20%; max-width: 400px; height: 20px; margin-left: auto; margin-right: auto; padding-left: 0px; text-align: center; text-decoration: none; list-style-type: none; }
+.social-midias li { float: left; text-align: center; margin-left: auto; margin-right: auto; width: 25%;}
+.social-midias li a { outline: none; color: white; transition: 0.3s}
+.social-midias li a:hover { color: #3399cc; transition: 0.3s }
+
+
