@@ -68,7 +68,7 @@
 
 	#img-projeto{ width: 30%; float: right; }
 	#img-projeto img{ width: 100%; }
-	#texto-projeto{ width: 65%; float: left; }
+	#texto-projeto{ width: 100%; float: left; }
 	#texto-projeto h2{ margin-bottom: 15px; }
 	#texto-projeto p{ text-align: justify; }
 
@@ -105,8 +105,8 @@
 	#texto-intro p{ text-align: justify; }
 
 	#img-projeto{ width: 30%; float: right; }
-	#img-projeto img{ width: 100%; }
-	#texto-projeto{ width: 65%; float: left; }
+	#img-projeto img{ width: 50%; }
+	#texto-projeto{ width: 100%; float: left; }
 	#texto-projeto h2{ margin-bottom: 15px; }
 	#texto-projeto p{ text-align: justify; }
 
