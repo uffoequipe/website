@@ -147,14 +147,14 @@ section{ width: 100%; display: inline-block; padding-top: 100px; }
 #divisao_equipe img{ width: 100%; margin-left: auto; margin-right: auto; }
 
 .apoiadores{width: 100%}
-.apoiadores img{ width: 25%;}
+.apoiadores img{ width: 25%; margin:10%;}
 #texto-apoiadores {width:100%;}
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
 }
 
 form { max-width: 600px; margin: 0 auto; font-family: 'Open Sans', sans-serif; font-weight: weight; font-style: normal; padding: 10px; }
